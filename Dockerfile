@@ -11,4 +11,6 @@ RUN echo "SSHX is running..." > index.html
 
 EXPOSE 8080
 
-CMD python3 -m http.server 8080 & sshx
+CMD python3 -m http.server 8080 & \
+    echo "To SSH into a real server, run: ssh your_user@your_server_ip" && \
+    sshx --shell /bin/bash
