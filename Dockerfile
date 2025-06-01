@@ -11,5 +11,4 @@ RUN echo "SSHX is running..." > index.html
 
 EXPOSE 8080
 
-CMD python3 -m http.server 8080 & \
-    sshx run
+CMD python3 -m http.server 8080 & sshx
