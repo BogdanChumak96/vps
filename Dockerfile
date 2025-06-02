@@ -7,7 +7,7 @@ RUN apt update && \
 WORKDIR /app
 RUN echo "Hello from tmate!" > index.html
 
-EXPOSE 8080
+EXPOSE 8080 3000
 
 CMD python3 -m http.server 8080 & \
     tmate -F
